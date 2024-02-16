@@ -1,0 +1,67 @@
+.user-search-container{
+  display: flex;
+  position: relative;
+}
+
+.user-search-input{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.user-search-input input{
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+.user-search-input input:focus{
+ outline: none;
+}
+
+.suggestions-list{
+  max-height: 300px;
+  overflow-y: scroll;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.suggestions-list li{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+.suggestions-list li:hover{
+  background-color: #ccc;
+
+}
+.suggestions-list li img{
+  height: 20px;
+}
+
+.user-pill{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor:text;
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+  padding: 8px 10px;
+}
+.user-pill img{
+  height: 100%;
+}
+
+.selected{
+  background-color: #ccc;
+}
